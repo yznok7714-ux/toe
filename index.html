@@ -24,8 +24,9 @@
   --accent-light: #fdf0ea;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
-html{scroll-behavior:smooth;overflow-x:hidden;}
+html{scroll-behavior:smooth;}
 body{font-family:'Zen Kaku Gothic New','Noto Sans JP',sans-serif;background:var(--warm-white);color:var(--text);font-size:15px;line-height:1.8;}
+.page-wrapper{overflow-x:hidden;}
 
 /* ── NAV ── */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;height:68px;background:rgba(28,43,58,0.97);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:space-between;padding:0 40px;}
@@ -233,6 +234,7 @@ footer{background:var(--navy);padding:60px 40px 32px;}
 </style>
 </head>
 <body>
+<div class="page-wrapper">
 
 <!-- NAV -->
 <nav>
@@ -667,5 +669,6 @@ function handleSubmit(){
   alert('送信ありがとうございます。\n3営業日以内にご返信いたします。\n\n※ この画面はサンプルです。メールアドレス設定後に実際の送信が可能になります。');
 }
 </script>
+</div><!-- /.page-wrapper -->
 </body>
 </html>
